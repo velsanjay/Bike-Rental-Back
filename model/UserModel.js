@@ -31,7 +31,8 @@ const userModel = mongoose.Schema({
         unique:true
     },
     book:{
-        type:mongoose.Schema.Types.ObjectId
+        type:mongoose.Schema.Types.ObjectId,
+        default:null
     },
     licenceNo:{
         type:String,

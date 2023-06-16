@@ -21,6 +21,7 @@ const GetByIdRouter = require('./routes/Bikes/GetById');
 const EditUserRouter = require('./routes/EditUser');
 const RemoveBookUserRoter = require('./routes/Remove/RemoveBookUser');
 const RemoveUserRouter = require('./routes/Remove/RemoveUser');
+const GetUserDetail = require('./routes/getUser');
 
 
 
@@ -43,6 +44,7 @@ app.use('/',SignInRouter)
 app.use('/',ValidateRouter)
 app.use('/',ForgetRouter)
 app.use('/', EditUserRouter)
+app.use('/', GetUserDetail)
 app.use('/bike', NewBikeRouter)
 app.use('/bike', EditBikeDetail)
 app.use('/bike', RemoveBikeRouter)
